@@ -13,7 +13,7 @@ const Navigationbutton = () => {
         backgroundColor: "#DB9D00",
         width: "50%",
         height: "6%",
-        marginTop: "5%",
+        marginTop: "7%",
         borderRadius: 16,
         justifyContent: "center",
         alignItems: "center",
@@ -21,7 +21,7 @@ const Navigationbutton = () => {
         flexDirection: "row",
       }}
     >
-      <Text style={{ color: "white", fontSize: 16 }}>Get Ready</Text>
+      <Text style={{ color: "white", fontSize: 19 }}>Get Ready</Text>
       <View style={{ marginLeft: "10%" }}>
         <AntDesign name="arrowright" color="white" size={24} />
       </View>

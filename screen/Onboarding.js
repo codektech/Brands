@@ -17,16 +17,16 @@ const Onboarding = () => {
       <View
         style={{
           //   marginTop: "20%",
-          width: "42%",
+          width: "60%",
           //   height: "10%",
-          marginLeft: "4%",
-          backgroundColor: "pink",
+          marginLeft: "6%",
+          //   backgroundColor: "pink",
         }}
       >
         <View>
           <Text
             style={{
-              fontSize: 15,
+              fontSize: 17,
             }}
           >
             What's your
@@ -36,7 +36,7 @@ const Onboarding = () => {
           <Text
             style={{
               fontWeight: "bold",
-              fontSize: 40,
+              fontSize: 59,
               color: "#DB9D00",
               // fontFamily: "Arial",
             }}
@@ -49,7 +49,7 @@ const Onboarding = () => {
             alignItems: "flex-end",
           }}
         >
-          <Text>brands?</Text>
+          <Text style={{ fontSize: 17 }}>brands?</Text>
         </View>
       </View>
       <View
@@ -61,10 +61,11 @@ const Onboarding = () => {
         style={{
           //   justifyContent: "center",
           alignItems: "center",
+          margin: "4%",
           //   backgroundColor: "blue",
         }}
       >
-        <Text style={{ fontSize: 20 }}>
+        <Text style={{ fontSize: 18 }}>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s
@@ -79,7 +80,13 @@ const Onboarding = () => {
           justifyContent: "flex-end",
         }}
       >
-        <Image source={require("../Images/Image2.png")}></Image>
+        <Image
+          style={{
+            width: "85%",
+            height: "85%",
+          }}
+          source={require("../Images/Image2.png")}
+        ></Image>
       </View>
     </View>
   );
