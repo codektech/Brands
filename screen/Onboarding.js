@@ -3,14 +3,14 @@
 import React from "react";
 import { View, Text, Image } from "react-native";
 import Navigationbutton from "../components/navigationbutton";
-const Onboarding = () => {
+const Onboarding = ({ navigation }) => {
   return (
     <View
       style={{
         // flex: 1,
         width: "100%",
         height: "100%",
-        // backgroundColor: "blue",
+        backgroundColor: "white",
       }}
     >
       <View style={{ height: "10%" }}></View>
@@ -59,10 +59,8 @@ const Onboarding = () => {
       ></View>
       <View
         style={{
-          //   justifyContent: "center",
           alignItems: "center",
           margin: "4%",
-          //   backgroundColor: "blue",
         }}
       >
         <Text style={{ fontSize: 18 }}>
@@ -71,7 +69,7 @@ const Onboarding = () => {
           since the 1500s
         </Text>
       </View>
-      <Navigationbutton />
+      <Navigationbutton navigation={navigation} />
       <View
         style={{
           flex: 1,

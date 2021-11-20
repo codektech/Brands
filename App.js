@@ -7,26 +7,44 @@ import Discription from "./components/Discription";
 import Main from "./components/portait";
 import Collection from "./components/collection";
 import Onboarding from "./screen/Onboarding";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Mainscreen from "./screen/Mainscreen";
+import { NavigationContainer } from "@react-navigation/native";
+import CollectionScreen from "./screen/Collectionscreen";
+const Stack = createNativeStackNavigator();
 export default function App() {
   return (
-    <View
-      style={{
-        // flex: 1,
-        height: "100%",
-        width: "100%",
-        // marginTop: "20%",
-        // margin: "2%",
-        // position: "absolute",
-      }}
-    >
-      <Onboarding />
-      {/* <Navigationbutton />
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Onboarding"
+          component={Onboarding}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen
+          name="Mainscreen"
+          component={Mainscreen}
+          options={{
+            // headerShown: false,
+            title: "Brand",
+            headerStyle: {
+              backgroundColor: "#DB9D00",
+            },
+          }}
+        />
 
-      <Main />
-      <View style={{ height: "2%" }}></View>
-      <Discription />
-      <View style={{ height: "2%" }}></View>
-      <Collection /> */}
-    </View>
+        <Stack.Screen
+          name="Collectionscreen"
+          component={CollectionScreen}
+          options={{
+            //   // headerShown: false,
+            title: "Collections",
+            headerStyle: {
+              backgroundColor: "#DB9D00",
+            },
+          }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }

@@ -2,37 +2,39 @@
 
 import React from "react";
 import { View, Text, Image } from "react-native";
-const Collection = () => {
+const Collection = (props) => {
+  const { image1, image2, Text1, Text2, Text3 } = props;
   return (
-    <View style={{ flexDirection: "row" }}>
-      <Image source={require("../Images/image6.png")}></Image>
+    <View style={{ flexDirection: "row", marginTop: "5%" }}>
+      <Image source={image1}></Image>
 
       <View
         style={{
           justifyContent: "center",
           alignItems: "center",
           flex: 1,
-          //   backgroundColor: "blue",
         }}
       >
-        <Text>Men Collections</Text>
+        <Text style={{ fontSize: 16, fontWeight: "bold", color: "black" }}>
+          {Text1}
+        </Text>
         <View>
-          <Image source={require("../Images/Group.png")}></Image>
+          <Image source={image2}></Image>
           <Text
             style={{
               position: "absolute",
               fontWeight: "bold",
               fontSize: 14,
-              marginTop: "5%",
-              marginRight: "2%",
+              marginTop: "7%",
+              marginRight: "4%",
               alignSelf: "flex-end",
               color: "#DB9D00",
             }}
           >
-            50%
+            {Text2}
           </Text>
         </View>
-        <Text>Junaid Jamshed </Text>
+        <Text style={{ fontWeight: "bold", fontSize: 16 }}>{Text3}</Text>
       </View>
     </View>
   );

@@ -1,30 +1,47 @@
 /** @format */
 
 import React from "react";
-import { View, Text } from "react-native";
+import { View, Text, Pressable } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import AntDesign from "react-native-vector-icons/AntDesign";
-const Navigationbutton = () => {
+const Navigationbutton = ({ navigation }) => {
   return (
-    // <View>
-
     <View
       style={{
         backgroundColor: "#DB9D00",
         width: "50%",
         height: "6%",
-        marginTop: "7%",
-        borderRadius: 16,
         justifyContent: "center",
-        alignItems: "center",
+        borderRadius: 16,
+
         marginLeft: "4%",
-        flexDirection: "row",
       }}
     >
-      <Text style={{ color: "white", fontSize: 19 }}>Get Ready</Text>
-      <View style={{ marginLeft: "10%" }}>
-        <AntDesign name="arrowright" color="white" size={24} />
-      </View>
+      <TouchableOpacity onPress={() => navigation.navigate("Mainscreen")}>
+        <View
+          style={{
+            flexDirection: "row",
+            alignSelf: "center",
+          }}
+        >
+          <Text
+            style={{
+              color: "white",
+              width: "50%",
+              fontSize: 19,
+            }}
+          >
+            Get Ready
+          </Text>
+          <View
+            style={{
+              marginLeft: "5%",
+            }}
+          >
+            <AntDesign name="arrowright" color="white" size={24} />
+          </View>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 };
