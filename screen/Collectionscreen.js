@@ -35,8 +35,8 @@ const CollectionScreen = () => {
     },
   ];
   return (
-    <View style={{ marginTop: "8%", marginLeft: "4%" }}>
-      <ScrollView style={{ backgroundColor: "white" }}>
+    <ScrollView style={{ backgroundColor: "white" }}>
+      <View style={{ marginTop: "8%", marginLeft: "4%" }}>
         {collectionData.map(({ image1, image2, Text1, Text2, Text3 }) => {
           return (
             <Collection
@@ -48,8 +48,8 @@ const CollectionScreen = () => {
             />
           );
         })}
-      </ScrollView>
-    </View>
+      </View>
+    </ScrollView>
   );
 };
 

@@ -15,8 +15,8 @@ const Textinput = () => {
     >
       <View
         style={{
-          width: "100%",
           justifyContent: "center",
+
           height: 40,
           borderRadius: 11,
           backgroundColor: "lightgrey",
@@ -31,6 +31,7 @@ const Textinput = () => {
             marginLeft: "5%",
           }}
           value={text}
+          // ref={setText}
           placeholder="choose your categories"
           onChangeText={setText}
           placeholderTextColor="black"
