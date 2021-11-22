@@ -15,7 +15,7 @@ const Textinput = () => {
     >
       <View
         style={{
-          width: 332,
+          width: "100%",
           justifyContent: "center",
           height: 40,
           borderRadius: 11,

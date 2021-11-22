@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import { View, Text, FlatList, Image, ScrollView } from "react-native";
 import Main from "../components/portait";
 import Discription from "../components/Discription";
-import { TextInput } from "react-native-gesture-handler";
-import FontAwesome from "react-native-vector-icons/FontAwesome";
 import Textinput from "../components/Textinput";
 const Mainscreen = ({ navigation }) => {
   const pData = [

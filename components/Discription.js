@@ -42,7 +42,7 @@ const Discription = (props) => {
               }}
             >
               <Image
-                style={{ width: "85%", height: "85%" }}
+                style={{ width: "90%", height: "90%" }}
                 source={image}
                 // resizeMode="cover"
               ></Image>

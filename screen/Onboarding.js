@@ -73,17 +73,18 @@ const Onboarding = ({ navigation }) => {
       <View
         style={{
           flex: 1,
+
           alignItems: "flex-end",
-          //   bottom: 0,
+          // bottom: 0,
           justifyContent: "flex-end",
         }}
       >
         <Image
           style={{
-            width: "85%",
-            height: "85%",
+            width: "80%",
+            height: "80%",
           }}
-          source={require("../Images/Image2.png")}
+          source={require("../Images/image2.png")}
         ></Image>
       </View>
     </View>
