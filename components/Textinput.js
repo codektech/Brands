@@ -1,11 +1,9 @@
 /** @format */
 
 import React, { useState } from "react";
-
 import { View, TextInput, Text } from "react-native";
 import { TouchableOpacity } from "react-native-gesture-handler";
 import FontAwesome from "react-native-vector-icons/FontAwesome";
-
 const Textinput = () => {
   const { text, setText } = useState("");
 
@@ -21,7 +19,6 @@ const Textinput = () => {
           justifyContent: "center",
           height: 40,
           borderRadius: 11,
-
           backgroundColor: "lightgrey",
         }}
       >
@@ -31,7 +28,6 @@ const Textinput = () => {
             borderRadius: 11,
             width: "80%",
             height: "100%",
-            // backgroundColor: "pink",
             marginLeft: "5%",
           }}
           value={text}
@@ -39,7 +35,6 @@ const Textinput = () => {
           onChangeText={setText}
           placeholderTextColor="black"
         ></TextInput>
-
         <View
           style={{
             alignSelf: "flex-end",

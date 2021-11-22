@@ -3,9 +3,11 @@
     "name": "Brands",
     "slug": "Brands",
     "version": "1.0.0",
-    "assetBundlePatterns": [
-      "**/*"
-    ]
+    "assetBundlePatterns": ["**/*"],
+    "android": {
+      "package": "com.Codek.Brandi",
+      "versionCode": 1
+    }
   },
   "name": "Brands"
 }
